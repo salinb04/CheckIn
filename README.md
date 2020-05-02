@@ -43,6 +43,6 @@ Rough Breakdown of Tasks:
 -Create HTML for map block
 -Create CSS for map block
 -Embed Map
--Show all closest park/trail/nature reserves to user's location
+-Show closest park/trail/nature reserves to user's location
 -Create HTML for About page
 -Create CSS for About page
