@@ -1,1 +1,1 @@
-# Project-1
+A wellness/calendar/map app that features a calendar where you can add to-do's in a calendar/list. The app gives motivational quotes and also has a map that shows parks, nature trails, etc. near your current location.
