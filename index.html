@@ -5,10 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--Google Map-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Script-->
+    <script src="script.js"></script>
+
 </head>
 
 <body>
 
+    <a href="#mapmodel" class="modal-trigger blue z-depth-1 waves-effect waves-light btn-floating">
+        <i class="red material-icons">location_on</i>
+    </a>
+    <br><br><br>
+    Nature Preserve Near Me
+    <!-- <div id="googleMap" style="width:500px;height:380px;"></div> -->
+
+    <div id="mapmodel" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Nature Preserve Near Me:</h4>
+            <div id="googleMap" style="width:500px;height:380px;"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="red modal-action modal-close waves-effect waves-green btn-flat">Got it</a>
+        </div>
+    </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzwDCT7NL0s7HpMwlVdGW_GcS4qSYK8cY&callback=initMap"
+        type="text/javascript"></script>
 </body>
 
 </html>
