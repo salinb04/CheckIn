@@ -20,21 +20,21 @@
     <button data-target="modal1" class="btn modal-trigger">Daily Quote</button>
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="modal1" class="modal" style="color: rgb(83, 43, 226); background-color: black;">
         <div class="modal-content">
-            <h4>Quote of the Day</h4>
-            <p>A bunch of text</p>
+            <h4 id="currentDay"></h4>
+            <p></p>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <div class="modal-footer" style=background-color:black>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: rgb(83, 43, 226)">Close</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
-
     <!--JavaScript at end of body for optimized loading-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- <script type="text/javascript" src="materialize/js/materialize.min.js"></script> -->
+    <script src="materialize/library/moment.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".modal").modal();
@@ -47,22 +47,39 @@
         $.ajax({
             url: queryURL,
             method: "GET"
-        }).then(function (response) {
+        }).then(function (data) {
+            var response = JSON.parse(data);
             console.log(response);
 
-            // Create and save a reference to new empty modal
+            // function getRandom() {
+            //     var randIndex = Math.floor(Math.random() * arr.length);
+            //     var randElement = arr[randIndex];
+
+            //     return randElement;
+
+
+            // // Create and save a reference to new empty modal
+            var divBody = $(".modal-content")
             var quoteBody = $("<p>");
 
-            var quoteText = $("<p>").text(response.text);
-            var quoteAuthor = $("<p>").text(response.author);
+            var quoteText = $("<p>").text(response[0].text);
+            var quoteAuthor = $("<p>").text(response[0].author);
+
             // Append the p elements to the div
-            p.append(text, author);
+            quoteBody.append(quoteText, quoteAuthor);
             // Append the p to the div element
-            div.append(p);
+            divBody.append(quoteBody);
+            // }
         });
+        // set variable to the current day. Reference https://momentjs.com/docs/
+        var currentDay = moment().format("dddd, MMMM Do");
+        // set the text of the h4 tag as the current day
+        $("#currentDay").text(currentDay);
+
 
 
     </script>
 </body>
+
 
 </html>
