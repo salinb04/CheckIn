@@ -36,8 +36,6 @@ function createHourBlocks() {
         // Decide which class to add depending moment.js
         var currentTime = moment().format("HH");
         var currentTimeInt = parseInt(currentTime);
-        console.log("currentTime:" + currentTimeInt);
-        console.log("thisHour:" + hour)
         if (currentTime > hour) {
             textArea.removeClass("future");
             textArea.addClass("past");
@@ -46,10 +44,8 @@ function createHourBlocks() {
             textArea.addClass("present");
         };
 
-
-
         // Save Button
-        var saveButton = $("<button/>").addClass("saveBtn");
+        var saveButton = $("<button/>").addClass("btn waves-effect waves-light");
         saveButton.addClass(hour);
 
         saveButton.on('click', function (event) {

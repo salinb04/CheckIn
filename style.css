@@ -1,9 +1,26 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #edf5e1;
+}
+
 .nav-wrapper {
   background-color: #05386b;
 }
+
+/* Header */
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
 nav .brand-logo {
   color: #edf5e1;
-  
 }
 
 .display-3 {
@@ -18,11 +35,29 @@ nav .brand-logo {
   margin: 5%;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  background-color: #edf5e1;
+/* Header */
+
+/* Hour Block Section */
+
+.collection {
+  margin: 5%;
+  border: none;
+}
+
+.collection-item {
+  text-align: center;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hour {
+  width: 50px;
+  padding-right: 2px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 textarea{
@@ -30,74 +65,41 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
   width: 80%;
-  height: 60px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  margin-bottom: 30px;
-}
-
-.description {
-  white-space: pre-wrap;
-}
-
-.collection-item {
-  text-align: center;
-  border-radius: 15px;
-  position: relative;
-}
-
-.hour {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #000000;
-  width: 10%
+  height: 100%;
 }
 
 .past {
-  display: inline-block;
   background-color: #d3d3d3;
   color: white;
 }
 
 .present {
-  display: inline-block;
   background-color: #ff6961;
   color: white;
 }
 
 .future {
-  display: inline-block;
   background-color: #77dd77;
   color: white;
 }
 
-.saveBtn {
-  display: inline-block;
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-  width: 10%;
-  height: 60px;
+.btn {
+  height: 100%;
+  width: 30px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0 2px 2px 0;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.btn:hover {
+  box-shadow: none;
 }
 
-.collection {
-  margin: 5%;
-}
+/* Hour Block Section */
+
+/* Footer */
 
 .footer{
   height: 50px;
@@ -109,3 +111,5 @@ textarea{
   color: #edf5e1;
   padding-top: 16px;
 }
+
+/* Footer */
