@@ -7,6 +7,7 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function () {
@@ -18,4 +19,6 @@ $(document).ready(function () {
     });
 });
 
+// var api_url: https://maps.googleapis.com/maps/api/place/nearbysearch/json?
+// var api_key
 
