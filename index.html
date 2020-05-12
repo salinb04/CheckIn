@@ -4,24 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CheckIn</title>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!--Google Map-->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <!--Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css" />
     <!--Script-->
     <script src="script.js"></script>
 
 </head>
 
 <body>
+    <!-- Ben's task scheduler -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">CheckIn</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Dashboard</a></li>
+                <li><a href="badges.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <h1 class="display-3">Your Daily Hub for Motivation</h1>
+        <p class="lead">Fill this list with healthy activities such as working out, meditating, exploring nature, etc.
+        </p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <ul class="collection"></ul>
+    <!-- Timeblocks go here -->
+    </ul>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="taskScheduler.js"></script>
 
+    <!-- Ana's nature map -->
     <a href="#mapmodel" class="modal-trigger blue z-depth-1 waves-effect waves-light btn-floating">
         <i class="red material-icons">location_on</i>
     </a>
@@ -42,6 +69,12 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzwDCT7NL0s7HpMwlVdGW_GcS4qSYK8cY&callback=initMap"
         type="text/javascript"></script>
+
+    <footer>
+        <div class="footer">
+            <p class="footer-text">© 2020 Ruby Hurd, Ana Lorenzo, Ben Salinaro</p>
+        </div>
+    </footer>
 </body>
 
 </html>
