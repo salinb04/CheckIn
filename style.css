@@ -1,0 +1,115 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #edf5e1;
+}
+
+.nav-wrapper {
+  background-color: #05386b;
+}
+
+/* Header */
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+nav .brand-logo {
+  color: #edf5e1;
+}
+
+.display-3 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 1%;
+  color: #05386b;
+}
+
+.lead {
+  color: #05386b;
+  margin: 5%;
+}
+
+/* Header */
+
+/* Hour Block Section */
+
+.collection {
+  margin: 5%;
+  border: none;
+}
+
+.collection-item {
+  text-align: center;
+  border-radius: 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hour {
+  width: 50px;
+  padding-right: 2px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  padding: 10px;
+  width: 80%;
+  height: 100%;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.btn {
+  height: 100%;
+  width: 30px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+/* Hour Block Section */
+
+/* Footer */
+
+.footer{
+  height: 50px;
+  background-color: #05386b;
+  text-align: center;
+}
+
+.footer-text {
+  color: #edf5e1;
+  padding-top: 16px;
+}
+
+/* Footer */
